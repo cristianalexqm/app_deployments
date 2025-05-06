@@ -41,3 +41,10 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+
+export type Payment = {
+    id: string
+    amount: number
+    state: "pending" | "processing" | "success" | "failed"
+    email: string
+}
