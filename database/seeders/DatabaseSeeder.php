@@ -21,7 +21,23 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
+            //Catalogo
+            CardTypesSeeder::class,
+            MobileOperatorsSeeder::class,
+            CurrenciesSeeder::class,
+            AccountClassesSeeder::class,
+            AccountTypesBanksSeeder::class,
+            BankTypesSeeder::class,
+            DocumentTypeSeeder::class,
+            QuoteProviderSeeder::class,
+            TipoRedCriptoSeeder::class,
+
             PaymentSeeder::class,
+
+            //Entidades
+            AfpTypeSeeder::class,
+            AfpCommissionTypeSeeder::class,
+            WorkerTypeSeeder::class,
         ]);
     }
 }
