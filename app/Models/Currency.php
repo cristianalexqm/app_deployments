@@ -15,7 +15,7 @@ class Currency extends Model
 
     public $timestamps = true;
 
-    /* // Relación con Empleados (Una moneda puede estar asociada a varios empleados)
+    // Relación con Empleados (Una moneda puede estar asociada a varios empleados)
     public function empleados()
     {
         return $this->hasMany(Employee::class, 'moneda_id');
@@ -30,5 +30,5 @@ class Currency extends Model
     public function accountingAccounts()
     {
         return $this->hasMany(AccountingAccount::class, 'currency_id');
-    } */
+    }
 }

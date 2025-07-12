@@ -38,6 +38,21 @@ class DatabaseSeeder extends Seeder
             AfpTypeSeeder::class,
             AfpCommissionTypeSeeder::class,
             WorkerTypeSeeder::class,
+            TypeSeeder::class,
+            EntitySeeder::class,
+            PersonSeeder::class,
+            CompanySeeder::class,
+            EntityTypeSeeder::class,
+            AssociateTypeSeeder::class,
+            EmployeeSeeder::class,
+            ProviderSeeder::class,
+            ClientSeeder::class,
+            OwnCompanySeeder::class,
+            OwnCompanyShareholderSeeder::class,
+            AssociateSeeder::class,
+            AssociateTypeAssociateSeeder::class,
+            DatoPersonalBancarioSeeder::class,
+            AssociateEmailSeeder::class,
         ]);
     }
 }

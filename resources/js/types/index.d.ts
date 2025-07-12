@@ -57,6 +57,7 @@ export type Payment = {
     email: string
 }
 
+// Catalogos ----------------------------------------------------------
 export type Currencie = {
     id: string
     cod: string
@@ -113,7 +114,7 @@ export type DocumentType = {
 }
 
 export type QuoteProvider = {
-    id: string
+    id: number
     nombre: string
     descripcion: string
 }
@@ -141,4 +142,59 @@ export type AfpCommissionType = {
     id: string
     code: string
     nombre: string
+}
+
+// Entidades ----------------------------------------------------------
+export type Entity = {
+    id: number
+    descripcion: string
+    direccion: string
+    pais: string
+    departamento: string
+    provincia: string
+    distrito: string
+    foto_usuario: string
+    nombre_razon_social: string
+    tipo_documento_id: number
+    tipo_documento?: {
+        id: number
+        code: string
+    }
+    documento: string
+    persona?: {
+        id: number
+        ruc: string
+        fecha_nacimiento: string
+        correo: string
+        genero: string
+        telefono: string
+        codigo_postal: string
+        entidad_id: number
+        nombre_pila: string
+        apellido_paterno: string
+        apellido_materno: string
+    }
+    empresa?: {
+        id: number
+        persona_contacto: string
+        celular_contacto: string
+        correo_contacto: string
+        tipo_empresa: string
+        entidad_id: number
+    }
+    entidad_id: number
+    tipos_entidades?: {
+        id: number
+        tipo_id: number
+        entidad_id: number
+        estado: string
+        tipo: { 
+            id: number
+            nombre: string
+        }
+    }[]
+}
+
+interface EntityProps {
+    selectedEntity: Entity;
 }

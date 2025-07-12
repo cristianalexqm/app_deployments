@@ -13,8 +13,8 @@ class TipoRedCripto extends Model
     protected $fillable = ['cod', 'red', 'estado'];
     public $timestamps = true;
 
-    /* public function cuentasCripto()
+    public function cuentasCripto()
     {
         return $this->hasMany(CuentaCripto::class, 'tipo_red_cripto_id');
-    } */
+    }
 }

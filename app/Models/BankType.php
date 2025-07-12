@@ -15,7 +15,7 @@ class BankType extends Model
 
     public $timestamps = true;
 
-    /* // Relación con Empleados (Un banco puede estar asignado a varios empleados para sueldos)
+    // Relación con Empleados (Un banco puede estar asignado a varios empleados para sueldos)
     public function empleados()
     {
         return $this->hasMany(Employee::class, 'tipo_banco_sueldo');
@@ -31,7 +31,7 @@ class BankType extends Model
     public function proveedores()
     {
         return $this->hasMany(Provider::class, 'tipo_banco_id');
-    } */
+    }
 
     // Relación con TiposCuentasBanco (muchos a uno)
     public function tipoCuentaBanco()
@@ -39,9 +39,9 @@ class BankType extends Model
         return $this->belongsTo(AccountTypeBanks::class, 'tipos_cuentas_bancos_id');
     }
 
-    /* // Relación con BancoAcceso (Un banco acceso puede tener varios bancos)
+    // Relación con BancoAcceso (Un banco acceso puede tener varios bancos)
     public function bancosAcceso()
     {
         return $this->hasMany(BancoAcceso::class, 'tipo_banco_id');
-    } */
+    }
 }

@@ -17,8 +17,8 @@ class QuoteProvider extends Model
     ];
 
     // Relación con CasaDeApuesta (uno a muchos)
-    /* public function casasDeApuesta()
+    public function casasDeApuesta()
     {
         return $this->hasMany(BettingHouse::class, 'proveedor_cuota_id');
-    } */
+    }
 }

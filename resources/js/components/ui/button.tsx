@@ -20,6 +20,26 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+
+        violetaPrimario: "bg-violet-600 text-white shadow-xs hover:bg-violet-700 focus-visible:ring-violet-600/20 dark:focus-visible:ring-violet-600/40 dark:bg-violet-700",
+
+        violetaSecundario: "bg-violet-100 text-violet-800 hover:bg-violet-200 focus-visible:ring-violet-300/30 dark:bg-violet-200/10 dark:text-violet-300 dark:hover:bg-violet-200/20",
+
+        violetaTerciario: "bg-violet-50 text-violet-700 hover:bg-violet-100 dark:bg-violet-50/5 dark:text-violet-200",
+
+        violetaLigero: "bg-violet-200 hover:bg-violet-300 text-current dark:bg-violet-200/10 dark:hover:bg-violet-200/20",
+
+        violetaFuerte: "bg-violet-700 text-white hover:bg-violet-800 dark:bg-violet-800",
+
+        violetaOscuro: "bg-violet-900 text-white hover:bg-violet-800 dark:hover:bg-violet-700",
+
+        violetaGhost: "hover:bg-violet-500/10 focus-visible:ring-violet-500/20 dark:hover:bg-violet-500/20",
+
+        violetaSoftBadge: "bg-violet-500/20", // no text color = hereda
+
+        violetaStrongBadge: "bg-violet-600 text-white",
+
+        violetaAdaptiveBadge: "bg-violet-100 text-violet-800 dark:bg-violet-300/10 dark:text-violet-300",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

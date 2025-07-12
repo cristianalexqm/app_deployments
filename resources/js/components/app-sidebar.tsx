@@ -45,7 +45,7 @@ const navItems: NavItem[] = [
         href: "/",
         icon: Folder,
         items: [
-            { title: "Registro Persona/Empresa", href: "/", icon: CreditCard },
+            { title: "Registro Persona/Empresa", href: "/entities", icon: CreditCard },
             {
                 title: "Directorio Tipo", href: "/", icon: DollarSign, items: [
                     {
@@ -66,7 +66,7 @@ const navItems: NavItem[] = [
         href: "/",
         icon: Folder,
         items: [
-            { title: "Tipo de Tarjetas", href: "/card_types", icon: CreditCard },
+            { title: "Tipo de Tarjetas", href: "/", icon: CreditCard },
         ],
     },
 ]

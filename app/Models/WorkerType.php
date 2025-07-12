@@ -13,8 +13,8 @@ class WorkerType extends Model
     protected $fillable = ['code', 'nombre'];
 
     // Relación con Empleados (Un tipo de trabajador puede tener varios empleados)
-    /* public function empleados()
+    public function empleados()
     {
         return $this->hasMany(Employee::class, 'tipo_trabajador_id');
-    } */
+    }
 }
